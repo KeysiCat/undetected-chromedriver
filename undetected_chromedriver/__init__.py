@@ -253,7 +253,7 @@ class Chrome(selenium.webdriver.chrome.webdriver.WebDriver):
         except AttributeError:
             pass
 
-        options._session = self
+        # options._session = self # What do this code do?
 
         if not options.debugger_address:
             debug_port = (
